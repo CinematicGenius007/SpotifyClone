@@ -1,0 +1,333 @@
+:root{
+	/* some global variables for color scheme*/
+	--trademark-grey: #1c1c1c;
+	--trademark-gray: #1c1c1c;
+	--bluish-grey: #a2fff5;
+	--bluish-gray: #a2fff5;
+	--darkish-grey: #1f2428;
+	--darkish-gray: #1f2428;
+}
+
+*{
+	font-family: my8font;
+	color: white;
+}
+
+body{
+	background-color: black;
+	overflow: hidden;
+}
+
+#main-body{
+	overflow-y: scroll;
+	height: calc(100vh - 88px);
+	width: calc(100vw - 9px);
+}
+
+/*head*/
+#head{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/*webkit scrollbar*/
+#main-body::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+#main-body::-webkit-scrollbar-track {
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  */
+	/* box-shadow: inset 0 0 6px rgba(28,28,28,0.6); */
+	background-color: rgb(41, 41, 41);
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: width 0.3s ease-in-out;
+}
+
+/* Handle */
+#main-body::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background: rgb(110, 110, 110); 
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4); 
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
+	transition: width 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+#main-body::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0, 0, 0, 0.2); 
+}
+
+
+
+/*for all anchor tags*/
+a.link{
+	text-decoration: none;
+}
+
+a.simple{
+	color: white;
+	transition: color 0.3s ease-in-out;
+}
+
+a.simple:hover {
+	color: gray;
+}
+
+
+/*for all buttons*/
+button{
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+
+/*for all lists*/
+ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+ul.plain-list{
+	padding: 0px;
+	margin: 6px 16px;
+	text-align: left;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+
+
+/*title animation*/
+
+@keyframes tit_contab{
+	from{left: -50px;}
+
+	to{left: 0px;}
+}
+
+div#tit_con {
+	height: auto;
+	width: 80px;
+	border-left: 10px solid white;
+	transition: border-left-color 0.3s ease;
+	color: white;
+	line-height: 1.1;
+	font-size: 1.8rem;
+	font-family: my8Font;
+	padding: 0px 10px;
+	margin: 10px 20px;
+	overflow: hidden;
+	position: relative;
+	left: -50px;
+	animation: tit_contab 1s ease-in-out 0.5s forwards;
+	z-index: 5;
+}
+
+div#tit_con:hover {
+	border-left-color: gray;
+}
+
+@keyframes tittab{
+	from {left: -120px;}
+
+	to {left: 0px;}
+}
+
+#tit_con #title{
+	position: relative;
+	left: -120px;
+	animation: tittab 2s ease-in-out 1s forwards;
+}
+
+/*header*/
+
+header{
+	display: flex;
+	flex-wrap: nowrap;
+	/* position: absolute; */
+	/* left: 200px; */
+	top: 0px;
+	height: 70px;
+	width: calc(100% - 230px);
+	margin: 5px 15px;
+	justify-content: space-between;
+	z-index: 2;
+}
+
+header #fav{
+	display: flex;
+	font-family: my8font;
+	align-items: center;
+}
+
+header #headel{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: calc(60% - 66px);
+	max-width: 450px;
+	min-width: 380px;
+	margin: 0px 10px;
+	flex-wrap: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+header #headel > div{
+	margin: 0px 5px;
+	cursor: pointer;
+}
+
+#headel #search{
+	display: flex;
+	align-items: center;
+	background-color: var(--trademark-grey);
+	border-radius: 10px;
+	padding: 0px 4px;
+}
+
+#headel #search input{
+	background-color: var(--trademark-grey);
+	border: none;
+	width: 220px;
+	height: 30px;
+}
+
+#headel #account{
+	width: 40px;
+	height: 40px;
+	background-color: var(--trademark-grey);
+	background-size: contain;
+	background-image: url(Images/Jireh\ Villafuerte\ on\ Behance1.png);
+	border-radius: 50%;
+}
+
+
+
+/*footer*/
+footer{
+	display: flex;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	/*margin: 4px 16px;*/
+	padding: 8px 16px;
+	justify-content: space-around;
+	width: calc(100% - 32px);
+	min-width: 750px;
+	background-color: var(--trademark-grey);
+	z-index: 10;
+}
+
+footer .footer{
+	display: flex;
+}
+
+/*song-info*/
+#song-info{
+	width: calc(32% - 92px);
+	max-width: 250px;
+	min-width: 180px;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+#song-info #song-image{
+	height: 60px;
+	width: 60px;
+	background-color: black;
+	background-size: contain;
+	background-image: url(Images/outoftheblue.jpg);
+}
+
+#song-info #song-title div{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/*song-status*/
+#song-status{
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+#song-status > div{
+	display: flex;
+}
+
+#song-status #controls{
+	margin: 0px auto;
+	justify-content: space-evenly;
+	align-items: center;
+	max-width: 280px;
+	min-width: 240px;
+	height: 40px;
+}
+
+#song-status #playback-bar{
+	justify-content: space-between;
+	align-items: center;
+	height: 20px;
+}
+
+#song-status #playback-bar .progress-bar__bg{
+	display: flex;
+	/*overflow: hidden;*/
+	width: 100%;
+	height: 4px;
+	background: linear-gradient(to right, aqua 30%, white 30%);
+	transform: translateY(10px);
+	border-radius: 2px; 
+}
+
+#playback-bar .progress-bar__bg .progress-bar__slider{
+	width: 12px; 
+	height: 12px;
+	border: 0;
+	border-radius: 50%;
+	transform: translateY(-4px);
+	position: relative;
+	left: 28%;
+	background-color: white;
+}
+
+/*rem-controls*/
+
+#rem-controls{
+	min-width: 170px;
+	width: 18%;
+	justify-content: space-evenly;
+}
+
+#volume-bar #progress-bar .progress-bar__bg{
+	display: flex;
+	/*overflow: hidden;*/
+	width: 100%;
+	height: 4px;
+	background: linear-gradient(to right, aqua 30%, white 30%);
+	transform: translateY(11.5px);
+	border-radius: 2px; 
+}
+
+#volume-bar .progress-bar__bg .progress-bar__slider{
+	width: 12px; 
+	height: 12px;
+	border: 0;
+	border-radius: 50%;
+	transform: translate(22px, -4px);
+	background-color: white;
+}
+
+
+

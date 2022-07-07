@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Music Player</title>
+	<link rel='shortcut icon' href='Images/record-vinyl-solid.svg' type='image/x-icon'>
+	<link rel="stylesheet" href="fonts.css" />
+	<link rel="stylesheet" href="css.css" />
+    <link rel="stylesheet" href="playMain.css">
+</head>
+<body>
+	<div id="main-body">
+		<div id="head">
+			<div id="tit_con">
+				<div id="title">
+					<a href="Homepage.html" class="simple link">Music Player</a>
+				</div>
+			</div>
+
+			<header>
+				<div id="fav">
+					<a href="Homepage.html" class="simple link">Favourites</a>
+				</div>
+				<div id="headel">
+					<div id="search">
+						<span style="margin-top: 6px; cursor: pointer;">
+							<svg height="20" role="img" width="20" viewBox="0 0 512 512" class="_08f8133e4f703ce562826348eb158f87-scss" aria-hidden="true">
+								<path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor"></path>
+							</svg>
+						</span>
+						<span style="margin: 4px;">
+							<input type="search" name="" placeholder="Search" />
+						</span>
+					</div>
+					<div id="notification" style="padding-top: 6px;">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="40px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="40px" xml:space="preserve" fill="white">
+							<g>
+								<path d="M381.7,225.9c0-97.6-52.5-130.8-101.6-138.2c0-0.5,0.1-1,0.1-1.6c0-12.3-10.9-22.1-24.2-22.1c-13.3,0-23.8,9.8-23.8,22.1   c0,0.6,0,1.1,0.1,1.6c-49.2,7.5-102,40.8-102,138.4c0,113.8-28.3,126-66.3,158h384C410.2,352,381.7,339.7,381.7,225.9z"/>
+								<path d="M256.2,448c26.8,0,48.8-19.9,51.7-43H204.5C207.3,428.1,229.4,448,256.2,448z"/>
+							</g>
+						</svg>
+					</div>
+					<div id="account"></div>
+				</div>
+			</header>
+		</div>
+
+		<main>
+            <div id="tab1">
+                <div id="tab1-head-song">
+                    <div id="tb1-img"></div>
+                    <div id="tb1-info">
+                        <div class="text">
+                            <div style="width: 100%; display: flex; justify-content: space-between; align-items: baseline;">
+                                <div style="font-size: 1.3rem;">ColdPlay</div>
+                                <div style="font-size: 0.7rem; color: lavender;;">851 Followers</div>
+                            </div>
+                            <div style="font-size: 0.7rem; color: lavender;">British Band</div>
+                            <div style="font-size: 0.6rem;">
+                                <p style="color: lavender;">
+                                    Coldplay is a British music band that has enjoyed continuous success since their inception in 1966 through their intelligent and soulful songs. The band members are Chris Martin (lead vocals), Jonny Buckland (lead guitar), Guy Berryman (bass guitar) and Will Champion (drums).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <div style="width: 100%; display: flex; justify-content: flex-start; align-items: baseline;">
+                                <button id="tb1-head-bt1">Play All</button>
+                                <button id="tb1-head-bt2" onClick="followup()">Follow</button>
+                            </div>
+                            <div style="font-size: 0.7rem; margin-top: 8px;">247 Tracks | 128 Albums</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="list1">
+                    <div class="songl1">
+                        <div class="song-bundle">
+                            <div class="song-no">01</div>
+                            <div class="song-img" style="background-image: url(Images/artworks-000145437931-n5w58g-t500x500.jpg);"></div>
+                            <div class="song-info">
+                                <div class="title">Mirage</div>
+                                <div class="artist">Else</div>
+                            </div>
+                        </div>
+                        <div class="likes">
+                            <svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px" height="20px" fill="white">
+                                <circle cx="12" cy="12" r="10" opacity=".35" fill="dimgrey" />
+                                <path d="M17,13H7c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h10c0.552,0,1,0.448,1,1v0C18,12.552,17.552,13,17,13z" /><path d="M11,17V7c0-0.552,0.448-1,1-1h0c0.552,0,1,0.448,1,1v10c0,0.552-0.448,1-1,1h0C11.448,18,11,17.552,11,17z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="songl1">
+                        <div class="song-bundle">
+                            <div class="song-no">02</div>
+                            <div class="song-img" style="background-image: url(Images/Goodtime\ Party\ Music\ Retro\ Rainbow\ Turntable\ Graphic\ T-shirt\ by\ sunnybunny.jpeg);"></div>
+                            <div class="song-info">
+                                <div class="title">Worry Bout Us</div>
+                                <div class="artist">Rosie Lowe</div>
+                            </div>
+                        </div>
+                        <div class="likes">
+                            <svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px" height="20px" fill="white">
+                                <circle cx="12" cy="12" r="10" opacity=".35" fill="dimgrey" />
+                                <path d="M17,13H7c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h10c0.552,0,1,0.448,1,1v0C18,12.552,17.552,13,17,13z" /><path d="M11,17V7c0-0.552,0.448-1,1-1h0c0.552,0,1,0.448,1,1v10c0,0.552-0.448,1-1,1h0C11.448,18,11,17.552,11,17z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="songl1">
+                        <div class="song-bundle">
+                            <div class="song-no">03</div>
+                            <div class="song-img" style="background-image: url(Images/Kanye\ West\ Album\ History\ Square\ Poster\,\ Hypebeast\ Poster\,\ Hip\ Hop\ Poster\,\ Urban\ Wall\ Art\,\ Yeezy\ Wall.jpeg);"></div>
+                            <div class="song-info">
+                                <div class="title">New Skin</div>
+                                <div class="artist">Flume</div>
+                            </div>
+                        </div>
+                        <div class="likes">
+                            <svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px" height="20px" fill="white">
+                                <circle cx="12" cy="12" r="10" opacity=".35" fill="dimgrey" />
+                                <path d="M17,13H7c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h10c0.552,0,1,0.448,1,1v0C18,12.552,17.552,13,17,13z" /><path d="M11,17V7c0-0.552,0.448-1,1-1h0c0.552,0,1,0.448,1,1v10c0,0.552-0.448,1-1,1h0C11.448,18,11,17.552,11,17z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="active-song2" class="songl1">
+                        <div class="song-bundle">
+                            <div class="song-no">
+                                <div id="active-song-bundle2" style="display: flex; justify-content: space-evenly; align-items: flex-end; height: 20px;">
+                                    <div style="height: 10px; min-width: 3px; background-color: grey;"></div>
+                                    <div style="height: 14px; min-width: 3px; background-color: grey;"></div>
+                                    <div style="height: 7px; min-width: 3px; background-color: grey;"></div>
+                                </div>
+                            </div>
+                            <div class="song-img" style="background-image: url(Images/outoftheblue.jpg)"></div>
+                            <div class="song-info">
+                                <div class="title">Out of the Blue</div>
+                                <div class="artist">Sonny Red</div>
+                            </div>
+                        </div>
+                        <div class="likes">
+                            <svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px" height="20px" fill="white">
+                                <circle cx="12" cy="12" r="10" opacity=".35" fill="dimgrey" />
+                                <path d="M17,13H7c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h10c0.552,0,1,0.448,1,1v0C18,12.552,17.552,13,17,13z" /><path d="M11,17V7c0-0.552,0.448-1,1-1h0c0.552,0,1,0.448,1,1v10c0,0.552-0.448,1-1,1h0C11.448,18,11,17.552,11,17z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="songl1">
+                        <div class="song-bundle">
+                            <div class="song-no">05</div>
+                            <div class="song-img" style="background-image: url(Images/KennyBurrell_MidnightBlue.jpg)"></div>
+                            <div class="song-info">
+                                <div class="title">Midnight Blue</div>
+                                <div class="artist">Kenny Burrell</div>
+                            </div>
+                        </div>
+                        <div class="likes">
+                            <svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px" height="20px" fill="white">
+                                <circle cx="12" cy="12" r="10" opacity=".35" fill="dimgrey" />
+                                <path d="M17,13H7c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h10c0.552,0,1,0.448,1,1v0C18,12.552,17.552,13,17,13z" /><path d="M11,17V7c0-0.552,0.448-1,1-1h0c0.552,0,1,0.448,1,1v10c0,0.552-0.448,1-1,1h0C11.448,18,11,17.552,11,17z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="songl1">
+                        <div class="song-bundle">
+                            <div class="song-no">06</div>
+                            <div class="song-img" style="background-image: url(Images/Kenny-Burrell-Warhol.jpg)"></div>
+                            <div class="song-info">
+                                <div class="title">Hot Five</div>
+                                <div class="artist">Louis Armstrong</div>
+                            </div>
+                        </div>
+                        <div class="likes">
+                            <svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px" height="20px" fill="white">
+                                <circle cx="12" cy="12" r="10" opacity=".35" fill="dimgrey" />
+                                <path d="M17,13H7c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h10c0.552,0,1,0.448,1,1v0C18,12.552,17.552,13,17,13z" /><path d="M11,17V7c0-0.552,0.448-1,1-1h0c0.552,0,1,0.448,1,1v10c0,0.552-0.448,1-1,1h0C11.448,18,11,17.552,11,17z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="songl1">
+                        <div class="song-bundle">
+                            <div class="song-no">07</div>
+                            <div class="song-img" style="background-image: url(Images/Miles_Davis_BLUE_HAZE.jpg)"></div>
+                            <div class="song-info">
+                                <div class="title">Blue Haze</div>
+                                <div class="artist">Miles Davis</div>
+                            </div>
+                        </div>
+                        <div class="likes">
+                            <svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px" height="20px" fill="white">
+                                <circle cx="12" cy="12" r="10" opacity=".35" fill="dimgrey" />
+                                <path d="M17,13H7c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h10c0.552,0,1,0.448,1,1v0C18,12.552,17.552,13,17,13z" /><path d="M11,17V7c0-0.552,0.448-1,1-1h0c0.552,0,1,0.448,1,1v10c0,0.552-0.448,1-1,1h0C11.448,18,11,17.552,11,17z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="songl1">
+                        <div class="song-bundle">
+                            <div class="song-no">08</div>
+                            <div class="song-img" style="background-image: url(Images/Kenny-Burrell-Warhol.jpg)"></div>
+                            <div class="song-info">
+                                <div class="title">Blue Note 1543</div>
+                                <div class="artist">Kenny Burrell</div>
+                            </div>
+                        </div>
+                        <div class="likes">
+                            <svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px" height="20px" fill="white">
+                                <circle cx="12" cy="12" r="10" opacity=".35" fill="dimgrey" />
+                                <path d="M17,13H7c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h10c0.552,0,1,0.448,1,1v0C18,12.552,17.552,13,17,13z" /><path d="M11,17V7c0-0.552,0.448-1,1-1h0c0.552,0,1,0.448,1,1v10c0,0.552-0.448,1-1,1h0C11.448,18,11,17.552,11,17z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="songl1">
+                        <div class="song-bundle">
+                            <div class="song-no">09</div>
+                            <div class="song-img" style="background-image: url(Images/King-Cole-Trio.jpg)"></div>
+                            <div class="song-info">
+                                <div class="title">The King Cole Trio</div>
+                                <div class="artist">King Cole</div>
+                            </div>
+                        </div>
+                        <div class="likes">
+                            <svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px" height="20px" fill="white">
+                                <circle cx="12" cy="12" r="10" opacity=".35" fill="dimgrey" />
+                                <path d="M17,13H7c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h10c0.552,0,1,0.448,1,1v0C18,12.552,17.552,13,17,13z" /><path d="M11,17V7c0-0.552,0.448-1,1-1h0c0.552,0,1,0.448,1,1v10c0,0.552-0.448,1-1,1h0C11.448,18,11,17.552,11,17z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="songl1">
+                        <div class="song-bundle">
+                            <div class="song-no">10</div>
+                            <div class="song-img" style="background-image: url(Images/lester_young_lester_young_trio.jpg)"></div>
+                            <div class="song-info">
+                                <div class="title">Lester Young Trio</div>
+                                <div class="artist">Lester Young</div>
+                            </div>
+                        </div>
+                        <div class="likes">
+                            <svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px" height="20px" fill="white">
+                                <circle cx="12" cy="12" r="10" opacity=".35" fill="dimgrey" />
+                                <path d="M17,13H7c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h10c0.552,0,1,0.448,1,1v0C18,12.552,17.552,13,17,13z" /><path d="M11,17V7c0-0.552,0.448-1,1-1h0c0.552,0,1,0.448,1,1v10c0,0.552-0.448,1-1,1h0C11.448,18,11,17.552,11,17z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="songl1">
+                        <div class="song-bundle">
+                            <div class="song-no">11</div>
+                            <div class="song-img" style="background-image: url(Images/John-Coltrane-1957-Blue-Train_oo1.jpg)"></div>
+                            <div class="song-info">
+                                <div class="title">Blue train</div>
+                                <div class="artist">John Coltrane</div>
+                            </div>
+                        </div>
+                        <div class="likes">
+                            <svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px" height="20px" fill="white">
+                                <circle cx="12" cy="12" r="10" opacity=".35" fill="dimgrey" />
+                                <path d="M17,13H7c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h10c0.552,0,1,0.448,1,1v0C18,12.552,17.552,13,17,13z" /><path d="M11,17V7c0-0.552,0.448-1,1-1h0c0.552,0,1,0.448,1,1v10c0,0.552-0.448,1-1,1h0C11.448,18,11,17.552,11,17z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="songl1">
+                        <div class="song-bundle">
+                            <div class="song-no">12</div>
+                            <div class="song-img" style="background-image: url(Images/Moondog.jpg)"></div>
+                            <div class="song-info">
+                                <div class="title">Moondog</div>
+                                <div class="artist">Moondog</div>
+                            </div>
+                        </div>
+                        <div class="likes">
+                            <svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px" height="20px" fill="white">
+                                <circle cx="12" cy="12" r="10" opacity=".35" fill="dimgrey" />
+                                <path d="M17,13H7c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h10c0.552,0,1,0.448,1,1v0C18,12.552,17.552,13,17,13z" /><path d="M11,17V7c0-0.552,0.448-1,1-1h0c0.552,0,1,0.448,1,1v10c0,0.552-0.448,1-1,1h0C11.448,18,11,17.552,11,17z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2">
+                <div id="similar-artists">
+                    <div class="tab-header">
+                        <div class="tab-head">Similar Artists</div>
+                        <div class="for-allview">View All</div>
+                    </div>
+                    <div id="list2">
+                        <div class="l2-songs">
+							<div class="l2-scon">
+								<div class="l2-simg"></div>
+								<div class="l2-stit">
+									<div class="l2-snam">Imagine Dragons</div>
+									<div class="l2-rdate">Pop Band</div>
+								</div>
+							</div>
+							<div class="l2-time">
+								<div class="l2-3dot">...</div>
+								<div class="l2-slen">4:44</div>
+							</div>
+						</div>
+                        <div class="l2-songs">
+							<div class="l2-scon">
+								<div class="l2-simg"></div>
+								<div class="l2-stit">
+									<div class="l2-snam">Imagine Dragons</div>
+									<div class="l2-rdate">Pop Band</div>
+								</div>
+							</div>
+							<div class="l2-time">
+								<div class="l2-3dot">...</div>
+								<div class="l2-slen">4:44</div>
+							</div>
+						</div>
+                        <div class="l2-songs">
+							<div class="l2-scon">
+								<div class="l2-simg"></div>
+								<div class="l2-stit">
+									<div class="l2-snam">Imagine Dragons</div>
+									<div class="l2-rdate">Pop Band</div>
+								</div>
+							</div>
+							<div class="l2-time">
+								<div class="l2-3dot">...</div>
+								<div class="l2-slen">4:44</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+                <div id="recently-played">
+                    <div class="tab-header">
+                        <div class="tab-head">Recently Played</div>
+                        <div class="for-allview">View All</div>
+                    </div>
+                    <div id="list3">
+                        <div class="songs-l3">
+                            <div class="songs-bundle">
+                                <div class="song-no">01</div>
+                                <div class="song-img" style="background-image: url(Images/artworks-000145437931-n5w58g-t500x500.jpg);"></div>
+                                <div class="song-info">
+                                    <div class="title">Mirage</div>
+                                    <div class="artist">Else</div>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <svg role="img" height="14" width="14" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                    <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="songs-l3">
+                            <div class="songs-bundle">
+                                <div class="song-no">02</div>
+                                <div class="song-img" style="background-image: url(Images/Goodtime\ Party\ Music\ Retro\ Rainbow\ Turntable\ Graphic\ T-shirt\ by\ sunnybunny.jpeg);"></div>
+                                <div class="song-info">
+                                    <div class="title">Worry Bout Us</div>
+                                    <div class="artist">Rosie Lowe</div>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <svg role="img" height="14" width="14" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                    <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="songs-l3">
+                            <div class="songs-bundle">
+                                <div class="song-no">03</div>
+                                <div class="song-img" style="background-image: url(Images/Kanye\ West\ Album\ History\ Square\ Poster\,\ Hypebeast\ Poster\,\ Hip\ Hop\ Poster\,\ Urban\ Wall\ Art\,\ Yeezy\ Wall.jpeg);"></div>
+                                <div class="song-info">
+                                    <div class="title">New Skin</div>
+                                    <div class="artist">Flume</div>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <svg role="img" height="14" width="14" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                    <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="songs-l3">
+                            <div id="active-song" class="songs-bundle">
+                                <div class="song-no">
+                                    <div id="active-song-bundle" style="display: flex; justify-content: space-evenly; align-items: flex-end; height: 20px;">
+                                        <div style="height: 10px; min-width: 3px; background-color: grey;"></div>
+                                        <div style="height: 14px; min-width: 3px; background-color: grey;"></div>
+                                        <div style="height: 7px; min-width: 3px; background-color: grey;"></div>
+                                    </div>
+                                </div>
+                                <div class="song-img" style="background-image: url(Images/outoftheblue.jpg)"></div>
+                                <div class="song-info">
+                                    <div class="title">Out of the Blue</div>
+                                    <div class="artist">Sonny Red</div>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <svg role="img" height="14" width="14" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                    <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="songs-l3">
+                            <div class="songs-bundle">
+                                <div class="song-no">05</div>
+                                <div class="song-img" style="background-image: url(Images/KennyBurrell_MidnightBlue.jpg)"></div>
+                                <div class="song-info">
+                                    <div class="title">Midnight Blue</div>
+                                    <div class="artist">Kenny Burrell</div>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <svg role="img" height="14" width="14" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                    <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="songs-l3">
+                            <div class="songs-bundle">
+                                <div class="song-no">06</div>
+                                <div class="song-img" style="background-image: url(Images/Kenny-Burrell-Warhol.jpg)"></div>
+                                <div class="song-info">
+                                    <div class="title">Hot Five</div>
+                                    <div class="artist">Louis Armstrong</div>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <svg role="img" height="14" width="14" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                    <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="songs-l3">
+                            <div class="songs-bundle">
+                                <div class="song-no">07</div>
+                                <div class="song-img" style="background-image: url(Images/Miles_Davis_BLUE_HAZE.jpg)"></div>
+                                <div class="song-info">
+                                    <div class="title">Blue Haze</div>
+                                    <div class="artist">Miles Davis</div>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <svg role="img" height="14" width="14" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                    <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="songs-l3">
+                            <div class="songs-bundle">
+                                <div class="song-no">08</div>
+                                <div class="song-img" style="background-image: url(Images/Kenny-Burrell-Warhol.jpg)"></div>
+                                <div class="song-info">
+                                    <div class="title">Blue Note 1543</div>
+                                    <div class="artist">Kenny Burrell</div>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <svg role="img" height="14" width="14" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                    <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="songs-l3">
+                            <div class="songs-bundle">
+                                <div class="song-no">09</div>
+                                <div class="song-img" style="background-image: url(Images/King-Cole-Trio.jpg)"></div>
+                                <div class="song-info">
+                                    <div class="title">The King Cole Trio</div>
+                                    <div class="artist">King Cole</div>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <svg role="img" height="14" width="14" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                    <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="songs-l3">
+                            <div class="songs-bundle">
+                                <div class="song-no">10</div>
+                                <div class="song-img" style="background-image: url(Images/lester_young_lester_young_trio.jpg)"></div>
+                                <div class="song-info">
+                                    <div class="title">Lester Young Trio</div>
+                                    <div class="artist">Lester Young</div>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <svg role="img" height="14" width="14" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                    <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="songs-l3">
+                            <div class="songs-bundle">
+                                <div class="song-no">11</div>
+                                <div class="song-img" style="background-image: url(Images/John-Coltrane-1957-Blue-Train_oo1.jpg)"></div>
+                                <div class="song-info">
+                                    <div class="title">Blue train</div>
+                                    <div class="artist">John Coltrane</div>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <svg role="img" height="14" width="14" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                    <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="songs-l3">
+                            <div class="songs-bundle">
+                                <div class="song-no">12</div>
+                                <div class="song-img" style="background-image: url(Images/Moondog.jpg)"></div>
+                                <div class="song-info">
+                                    <div class="title">Moondog</div>
+                                    <div class="artist">Moondog</div>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <svg role="img" height="14" width="14" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+                                    <path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+	</div>
+
+	<footer>
+		<div id="song-info" class="footer">
+			<div id="song-image"></div>
+			<div id="song-title" style="width: 56%; margin: 0px 8px;">
+				<div>OuT of The Blue</div>
+				<div style="font-size: 0.9rem; color: grey;">Sonny Red</div>
+			</div>
+			<div id="favourites" style="padding-top: 3px;">
+				<svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+					<path d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path>
+				</svg>
+			</div>
+		</div>
+		<div id="song-status" class="foot_el">
+			<div id="controls">
+				<div class="controls-grid shuffle">
+					<svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white">
+						<path d="M4.5 6.8l.7-.8C4.1 4.7 2.5 4 .9 4v1c1.3 0 2.6.6 3.5 1.6l.1.2zm7.5 4.7c-1.2 0-2.3-.5-3.2-1.3l-.6.8c1 1 2.4 1.5 3.8 1.5V14l3.5-2-3.5-2v1.5zm0-6V7l3.5-2L12 3v1.5c-1.6 0-3.2.7-4.2 2l-3.4 3.9c-.9 1-2.2 1.6-3.5 1.6v1c1.6 0 3.2-.7 4.2-2l3.4-3.9c.9-1 2.2-1.6 3.5-1.6z"></path>
+					</svg>
+				</div>
+				<div class="controls-grid go-backwards">
+					<svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white"><path d="M13 2.5L5 7.119V3H3v10h2V8.881l8 4.619z"></path></svg>
+				</div>
+				<div class="controls-grid play-pause">
+					<svg role="img" height="20" width="20" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white" style="border: 1px solid white; border-radius: 50%; padding: 5px;"><path d="M4.018 14L14.41 8 4.018 2z"></path></svg>
+				</div>
+				<div class="controls-grid go-forward">
+					<svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white"><path d="M11 3v4.119L3 2.5v11l8-4.619V13h2V3z"></path></svg>
+				</div>
+				<div class="controls-grid repeat">
+					<svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF" fill="white"><path d="M5.5 5H10v1.5l3.5-2-3.5-2V4H5.5C3 4 1 6 1 8.5c0 .6.1 1.2.4 1.8l.9-.5C2.1 9.4 2 9 2 8.5 2 6.6 3.6 5 5.5 5zm9.1 1.7l-.9.5c.2.4.3.8.3 1.3 0 1.9-1.6 3.5-3.5 3.5H6v-1.5l-3.5 2 3.5 2V13h4.5C13 13 15 11 15 8.5c0-.6-.1-1.2-.4-1.8z"></path></svg>
+				</div>
+			</div>
+			<div id="playback-bar">
+				<div class="playback-bar__progress-time _5f899d811cf206c5925f6450626fb0aa-scss" as="div">1:15</div>
+				<div class="progress-bar" style="width: 300px; height: 26px;">
+					<div class="middle-align progress-bar__bg">
+						<div class="progress-bar__fg_wrapper">
+							<div class="progress-bar__fg"></div><!--  style="transform: translateX(-99.9148%);" -->
+						</div>
+						<button aria-label="Change progress" class="middle-align progress-bar__slider"></button><!-- style="left: 0.0851918%; color:#b3b3b3;" -->
+					</div>
+				</div>
+				<!-- <div class="progress-bar">
+					<input type="range" />
+				</div> -->
+				<div class="playback-bar__progress-time playback-bar__progress-time__lone-css" as="div">4:10</div>
+			</div>
+		</div>
+		<div id="rem-controls" class="footer">
+			<div class="grid queue" style="padding-top: 6px;">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512; height: 18px; width: 18px;" xml:space="preserve">
+					<style type="text/css">
+						.st0{fill:#ffffff;}
+					</style>
+					<g id="XMLID_2_">
+						<path id="XMLID_8_" class="st0" d="M323,67H0v54h323V67z M323,175H0v54h323V175z M0,337h216v-54H0V337z M377,67v220.6   c-8.4-2.8-17.7-4.7-27-4.7c-44.7,0-81,36.3-81,81s36.3,81,81,81s81-36.3,81-81V121h81V67H377z"/>
+					</g>
+				</svg>
+			</div>
+			<div class="grid connect" style="font-size: 1.2rem;">
+				P
+			</div>
+			<div class="grid volume" style="padding-top: 5px;">
+				<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 512 512" fill="white" height="18px" width="18px">
+					<title>volume-glyph</title>
+					<path d="M234.67,106.67V405.33A21.33,21.33,0,0,1,200,422L99.18,341.33H64a64.07,64.07,0,0,1-64-64V234.67a64.07,64.07,0,0,1,64-64H99.18L200,90a21.33,21.33,0,0,1,34.66,16.66Zm54.11,90.68a21.33,21.33,0,0,0-1.19,30.15,42.23,42.23,0,0,1,0,57,21.33,21.33,0,1,0,31.33,29,84.89,84.89,0,0,0,0-114.94A21.34,21.34,0,0,0,288.78,197.34ZM379,137.87a21.33,21.33,0,0,0-30.78,29.54,127.61,127.61,0,0,1,0,177.19A21.33,21.33,0,1,0,379,374.14a170.26,170.26,0,0,0,0-236.27Zm60.36-60.6a21.34,21.34,0,0,0-30.55,29.79,213.59,213.59,0,0,1,0,297.9,21.34,21.34,0,0,0,30.55,29.79,256.28,256.28,0,0,0,0-357.48Z"/>
+				</svg>
+			</div>
+			<div id="volume-bar">
+				<div id="progress-bar" style="width: 90px;">
+					<div class="middle-align progress-bar__bg">
+						<div class="progress-bar__fg_wrapper"><div class="progress-bar__fg"></div><!--  style="transform: translateX(-27.5715%);" -->
+					</div>
+					<button aria-label="Change volume" class="middle-align progress-bar__slider"></button><!-- style="left: 72.4285%;"---></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="playmain.js"></script>
+
+
+
+	<!-- <div class="runner-container" style="width: 600px; height: 150px;">
+		<canvas class="runner-canvas" width="600" height="150" style="width: 600px; height: 150px;"></canvas>
+	</div> -->
+
+
+
+</body>
+</html>

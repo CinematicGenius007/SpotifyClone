@@ -1,0 +1,40 @@
+/*Web Fonts Pretty Cool ha*/
+@font-face {
+	font-family: my1Font;
+	src: url(Fonts/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+	font-family: my2Font;
+	src: url(Fonts/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+	font-family: my3Font;
+	src: url(Fonts/Courgette-Regular.ttf);
+}
+
+@font-face {
+	font-family: my4Font;
+	src: url(Fonts/Satisfy-Regular.ttf);
+}
+
+@font-face {
+	font-family: my5Font;
+	src: url(Fonts/UnicaOne-Regular.ttf);
+}
+
+@font-face {
+	font-family: my6Font;
+	src: url(Fonts/Monoton-Regular.ttf);
+}
+
+@font-face {
+	font-family: my7Font;
+	src: url(Fonts/OleoScript-Regular.ttf);
+}
+
+@font-face {
+	font-family: my8Font;
+	src: url(Fonts/Poppins-Medium.ttf);
+}

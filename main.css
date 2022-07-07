@@ -1,0 +1,424 @@
+/*main*/
+main{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: -80px;
+	padding-top: 120px;
+	height: calc(100vh - 200px);
+}
+
+
+/*tiles*/
+main div#tiles{
+	width: 64%;
+	max-width: 720px;
+	min-width: 660px;
+	/* display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center; */	
+}
+
+#tiles .tile-heads{
+	font-size: 1.2rem;
+}
+
+
+/*for carousel*/
+#tiles #carousel1-container{
+	height: 300px;
+	padding: 0px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: transform 0.5s ease-in-out;
+}
+
+#carousel1-container:hover .carousel-button{
+	background-color: var(--trademark-grey);
+	z-index: 4;
+}
+
+#carousel1-container:hover .cb1{
+	border: 2px outset gray;
+}
+
+#carousel1-container:hover .cb2{
+	border: 2px inset gray;
+}
+
+#carousel1-container .carousel-button{
+	border: 2px solid black;
+	border-radius: 50%;
+	background-color: black;
+	padding: 10px;
+	z-index: -2;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+
+#carousel1-container .carousel-button:hover {
+	background-color: white;
+}
+
+#carousel1-container .cb1:hover {
+	border-style: inset;
+	transition: border-style 0.4s ease-in-out;
+}
+
+#carousel1-container .cb2:hover {
+	border-style: outset;
+	transition: border-style 0.4s ease-in-out;
+}
+
+#carousel1-container .carousel-button .move-button{
+	height: 20px;
+}
+
+#tiles #carousel1-container #image-container{
+	height: 300px;
+	width: 720px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	left: -50px;
+}
+
+#carousel1-container #image-container .carousel-image div{
+	transition: all 0.5s ease-in-out;
+}
+
+#carousel1-container #image-container .carousel-image img{
+	cursor: pointer;
+}
+
+#carousel1-container #image-container .carousel-image #ccbi2{
+	background-image: url('Images/nora-fatehi-and-rayvanny-pepeta-song-teaser.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/*some media queries*/
+@media only screen and (max-width: 1150px){
+	#tiles #carousel1-container{
+		transform: scale(0.9);
+	}
+}
+
+@media only screen and (max-width: 1100px){
+	#tiles #carousel1-container{
+		transform: scale(0.8);
+	}
+}
+
+
+/*latest release*/
+
+#tiles #latest_release{
+	margin: 60px 0px;
+	padding: 0px 24px;
+	display: flex;
+	flex-direction: column;
+}
+
+#latest_release .ls-layer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ls-layer .lr-songs{
+	display: flex;
+	margin: 10px 20px 10px 0px;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 45%;
+}
+
+.lr-songs .lr-scon{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.lr-songs .lr-simg{
+	width: 90px;
+	height: 90px;
+	background-image: url("Images/Kanye\ West\ Album\ History\ Square\ Poster\,\ Hypebeast\ Poster\,\ Hip\ Hop\ Poster\,\ Urban\ Wall\ Art\,\ Yeezy\ Wall.jpeg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.lr-songs .lr-stit{
+	margin: 0px 20px;
+	cursor: pointer;
+}
+
+.lr-stit .lr-snam{
+	font-size: 0.9rem;
+}
+
+.lr-stit .lr-rdate{
+	font-size: 0.8rem;
+	color: darkgray;
+}
+
+
+.lr-songs .lr-time{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.lr-songs .lr-time .lr-3dot{
+	font-size: 1.5rem;
+	position: relative;
+	top: -20px;
+	cursor: pointer;
+}
+
+.lr-songs .lr-time .lr-slen{
+	font-size: 0.8rem;
+	color: darkgray;
+}
+
+
+
+
+/*popular - artists*/
+
+#tiles #popular_artists{
+	margin: 60px 0px;
+	padding: 0px 24px;
+	display: flex;
+	flex-direction: column;
+}
+
+#popular_artists #artists-pics{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#artists-pics .art-pcs{
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+	margin: 20px 0px;
+	/* background-color: var(--trademark-grey); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+}
+
+
+
+
+
+/*list*/
+main div#list{
+	width: 32%;
+	max-width: 360px;
+	min-width: 330px;
+	padding: 20px 0px;
+	transform: scale(0.8);
+}
+
+
+/*queue heading/title*/
+#list #queue{
+	height: 40px;
+	min-width: 280px;
+	width: auto;
+	margin: 20px 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	cursor: default;
+}
+
+button#drop-button{
+	border-radius: 3px;
+	padding: 3px 8px;
+	cursor: pointer;
+	transition-property: background-color, transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+button#drop-button:hover {
+	background-color: var(--trademark-grey);
+	transform: scale(1.3) translateY(-5px);
+}
+
+button#drop-button:hover div > div{
+	color: gray !important;
+}
+
+button#drop-button:hover div div svg{
+	fill: gray;
+}
+
+button#drop-button:active {
+	outline: none;
+	border: none;
+}
+
+
+#list #queue #drop-button #dropdown{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+#drop-button #dropdown div{
+	font-size: 1rem;
+	transition: color 0.4s ease-in-out;
+    -webkit-transition: color 0.4s ease-in-out;
+    -moz-transition: color 0.4s ease-in-out;
+    -o-transition: color 0.4s ease-in-out;
+}
+
+button#drop-button svg{
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+#drop-button #dropdown-list{
+    /* display: none; */
+    position: absolute;
+    background-color: white;
+    width: 155px;
+    right: 0px;
+    transition: display 0.4s ease;
+}
+
+/*link to playlists*/
+#dropdown-list li a.special{
+	color: black;
+	transition: color 0.2s ease;
+}
+
+#dropdown-list li a.special:hover {
+	color: darkslategray;
+}
+
+
+
+
+/*songs - list*/
+#list #song_list1{
+	padding: 10px 20px;
+}
+
+#list #song_list1 .songs-l1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+
+#list #song_list1 .songs-l1 .songs-bundle{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	max-width: 260px;
+	cursor: pointer;
+	padding: 5px 0px;
+	border-radius: 3px;
+	transition: all 0.3s ease-in-out;
+}
+
+#song_list1 .songs-l1 .songs-bundle:hover {
+	transform: scale(1.4);
+    background-color: var(--trademark-grey);
+	box-shadow: 0px 0px 8px 2px black;
+}
+
+#song_list1 .songs-l1 .songs-bundle:hover .song-img{
+	box-shadow: 0px 0px 5px 0px black;
+	/* transform: rotate(360deg); */
+	/* transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28); */
+}
+
+.songs-l1 .songs-bundle > div{
+	margin: 0px 5px;
+}
+
+.songs-l1 .songs-bundle .song-no{
+	font-size: 0.8rem;
+	color: grey;
+	width: 18px;
+	
+}
+
+/*cool stuff (10, 14, 7)*/
+@keyframes alpha1{
+	0%{height: 10px;}
+	25%{height: 14px;}
+	75%{height: 7px;}
+	100%{height: 10px;}
+}
+
+@keyframes alpha2{
+	0%{height: 14px;}
+	50%{height: 7px;}
+	75%{height: 10px;}
+	100%{height: 14px;}
+}
+
+@keyframes alpha3{
+	0%{height: 7px;}
+	25%{height: 10px;}
+	50%{height: 14px;}
+	100%{height: 7px;}
+}
+
+#active-song:hover #active-song-bundle div:nth-child(1){
+	animation: alpha1 1s ease-in-out infinite;
+}
+
+#active-song:hover #active-song-bundle div:nth-child(2){
+	animation: alpha1 2s ease-in-out infinite;
+}
+
+#active-song:hover #active-song-bundle div:nth-child(3){
+	animation: alpha3 1s ease-in-out infinite;
+}
+
+.songs-l1 .songs-bundle .song-img{
+	width: 60px;
+	height: 60px;
+	background-color: var(--trademark-grey);
+	background-size: contain; 
+	border-radius: 2px;
+	box-shadow: 2px 2px 1px 0px gray;
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.songs-l1 .songs-bundle .song-info > div{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.songs-l1 .songs-bundle .artist{
+	font-size: 0.8rem;
+	color: grey;
+}
+
+.songs-l1 .likes{
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.songs-l1 .likes:hover {
+	transform: scale(1.6);
+	stroke: var(--bluish-gray);
+}
+
